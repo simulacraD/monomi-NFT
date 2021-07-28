@@ -15,6 +15,7 @@
     <!-- Link to stylesheet and fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="styles/styleMain.css" rel="stylesheet">
+    <link href="styles/styleTab.css" rel="stylesheet">
     <link href="styles/styleNav.css" rel="stylesheet">
     <link href="styles/styleHexGrid.css" rel="stylesheet">
   </head>
@@ -24,14 +25,25 @@
     <div id="topTitleGrid">
       <div class="span1-5"></div> <!-- blank for phone icons -->
       <div></div> <!-- left margin -->
-      <div>
-        <h1>Title</h1>
-      </div> <!-- right margin -->
-      <div style="text-align:right; padding-right:6px;"><!--sort-->
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Tab1')" id="defaultOpen">Tab1 Title</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab2')">Tab2 Title</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab3')">Tab3 Title</button>
+      </div>
+      <div></div> <!-- right margin -->
+      <div></div> <!-- left margin -->
+      <div style="padding-top: 2%;">
+        <form id="search-form">
+          <div class="search">
+            <input type="text" name="search" class="round" value="Search..."/>
+          </div>
+        </form>
+      </div>
+      <div style="padding-top: 2%; text-align:right;"><!--sort-->
         <form action="#">
           <h4>
-            <label for="#" style="font-size: 4.2rem;">Sort by:</label>
-            <select id="#" name="#" style="font-size:3.6rem; border-radius: 45px; padding: 0 15px 0 15px;">
+            <label for="#" style="font-size: 3rem;">Sort by:</label>
+            <select id="#" name="#" style="font-size:3rem; border-radius: 45px; padding: 0 15px 0 15px;">
             <option value="#" selected="#">
               A-Z
             </option>
@@ -47,169 +59,174 @@
           </select>
         </h4>
       </div><!--/.sort-->
-      <div></div> <!-- right margin -->
-      <div></div> <!-- left margin -->
-      <div class="span2-4">
-        <form id="search-form">
-          <div class="search">
-            <input type="text" name="search" class="round" value="Search..."/>
-          </div>
-        </form>
-      </div>
-      <div></div>
     </div>
     
-      
-    <ul id="hexGrid" style="margin-top: 300px;">
-      <!-- start of hex and content -->
-      <li class="hex">
-        <div class="hexInt">
-          <a class="hexLink" href="#">
-            <div class='img' style="background-color: #d3d3d3; background-image: url('images/#');"></div>
-            <p id="hexLabel">Caption</p>
-          </a>
-        </div>
-      </li>
+    <!-- ***************************** Tab1 ***************************** -->
+    <div id="Tab1" class="tabcontent">
+      <ul id="hexGrid">
         
-      <li class="hex">
-        <div class="hexInt">
-          <a class="hexLink" href="#">
-            <div class='img' style="background-color: #d3d3d3; background-image: url('images/#');"></div>
-            <p id="hexLabel">Caption</p>
-          </a>
-        </div>
-      </li>
+        <!-- start of hex and content -->
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/#');"></div>
+              <p id="hexLabel">Caption</p>
+            </a>
+          </div>
+        </li>
+        
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/#');"></div>
+              <p id="hexLabel">Caption</p>
+            </a>
+          </div>
+        </li>
 
-      <li class="hex">
-        <div class="hexInt">
-          <a class="hexLink" href="#">
-            <div class='img' style="background-color: #d3d3d3; background-image: url('images/#');"></div>
-            <p id="hexLabel">Caption</p>
-          </a>
-        </div>
-      </li>
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/#');"></div>
+              <p id="hexLabel">Caption</p>
+            </a>
+          </div>
+        </li>
 
-      <li class="hex">
-        <div class="hexInt">
-          <a class="hexLink" href="#">
-            <div class='img' style="background-color: #d3d3d3; background-image: url('images/#');"></div>
-            <p id="hexLabel">Caption</p>
-          </a>
-        </div>
-      </li>
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/#');"></div>
+              <p id="hexLabel">Caption</p>
+            </a>
+          </div>
+        </li>
 
-      <li class="hex">
-        <div class="hexInt">
-          <a class="hexLink" href="#">
-            <div class='img' style="background-color: #d3d3d3; background-image: url('images/#');"></div>
-            <p id="hexLabel">Caption</p>
-          </a>
-        </div>
-      </li>
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/#');"></div>
+              <p id="hexLabel">Caption</p>
+            </a>
+          </div>
+        </li>
 
-      <li class="hex">
-        <div class="hexInt">
-          <a class="hexLink" href="#">
-            <div class='img' style="background-color: #d3d3d3; background-image: url('images/#');"></div>
-            <p id="hexLabel">Caption</p>
-          </a>
-        </div>
-      </li>
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/#');"></div>
+              <p id="hexLabel">Caption</p>
+            </a>
+          </div>
+        </li>
 
-      <li class="hex">
-        <div class="hexInt">
-          <a class="hexLink" href="#">
-            <div class='img' style="background-color: #d3d3d3; background-image: url('images/#');"></div>
-            <p id="hexLabel">Caption</p>
-          </a>
-        </div>
-      </li>
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/#');"></div>
+              <p id="hexLabel">Caption</p>
+            </a>
+          </div>
+        </li>
 
-      <li class="hex">
-        <div class="hexInt">
-          <a class="hexLink" href="#">
-            <div class='img' style="background-color: #d3d3d3; background-image: url('images/#');"></div>
-            <p id="hexLabel">Caption</p>
-          </a>
-        </div>
-      </li>
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/#');"></div>
+              <p id="hexLabel">Caption</p>
+            </a>
+          </div>
+        </li>
 
-      <li class="hex">
-        <div class="hexInt">
-          <a class="hexLink" href="#">
-            <div class='img' style="background-color: #d3d3d3; background-image: url('images/#');"></div>
-            <p id="hexLabel">Caption</p>
-          </a>
-        </div>
-      </li>
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/#');"></div>
+              <p id="hexLabel">Caption</p>
+            </a>
+          </div>
+        </li>
 
-      <li class="hex">
-        <div class="hexInt">
-          <a class="hexLink" href="#">
-            <div class='img' style="background-color: #d3d3d3; background-image: url('images/#');"></div>
-            <p id="hexLabel">Caption</p>
-          </a>
-        </div>
-      </li>
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/#');"></div>
+              <p id="hexLabel">Caption</p>
+            </a>
+          </div>
+        </li>
 
-      <li class="hex">
-        <div class="hexInt">
-          <a class="hexLink" href="#">
-            <div class='img' style="background-color: #d3d3d3; background-image: url('images/#');"></div>
-            <p id="hexLabel">Caption</p>
-          </a>
-        </div>
-      </li>
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/#');"></div>
+              <p id="hexLabel">Caption</p>
+            </a>
+          </div>
+        </li>
 
-      <li class="hex">
-        <div class="hexInt">
-          <a class="hexLink" href="#">
-            <div class='img' style="background-color: #d3d3d3; background-image: url('images/#');"></div>
-            <p id="hexLabel">Caption</p>
-          </a>
-        </div>
-      </li>
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/#');"></div>
+              <p id="hexLabel">Caption</p>
+            </a>
+          </div>
+        </li>
 
-      <li class="hex">
-        <div class="hexInt">
-          <a class="hexLink" href="#">
-            <div class='img' style="background-color: #d3d3d3; background-image: url('images/#');"></div>
-            <p id="hexLabel">Caption</p>
-          </a>
-        </div>
-      </li>
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/#');"></div>
+              <p id="hexLabel">Caption</p>
+            </a>
+          </div>
+        </li>
 
-      <li class="hex">
-        <div class="hexInt">
-          <a class="hexLink" href="#">
-            <div class='img' style="background-color: #d3d3d3; background-image: url('images/#');"></div>
-            <p id="hexLabel">Caption</p>
-          </a>
-        </div>
-      </li>
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/#');"></div>
+              <p id="hexLabel">Caption</p>
+            </a>
+          </div>
+        </li>
 
-      <li class="hex">
-        <div class="hexInt">
-          <a class="hexLink" href="#">
-            <div class='img' style="background-color: #d3d3d3; background-image: url('images/#');"></div>
-            <p id="hexLabel">Caption</p>
-          </a>
-        </div>
-      </li>
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/#');"></div>
+              <p id="hexLabel">Caption</p>
+            </a>
+          </div>
+        </li>
 
-      <li class="hex"> <!-- blank to create bottom space -->
-        <div class="hexInt"></div>
-      </li>
-    </ul>
+      </ul>
+    </div>
+
+    <!-- ***************************** Tab2 ***************************** -->
+    <div id="Tab2" class="tabcontent"></div>
+
+    <!-- ***************************** Tab3 ***************************** -->
+    <div id="Tab3" class="tabcontent"></div>
+
   </main>
 
-<!-- ***************************** end of main *************************** -->
+<!-- ***************************** end of main ***************************** -->
   <div id="bottomNavGrid">
-    <div></div>
+    <div> <!-- 5% --> </div>
+    <div>
+      <!-- aux nav button goes here -->
+    </div>
+    <div> <!-- 1fr --> </div>
     <div id="openNavBtn" onclick="openNav()">
       <img src="images/monomi-logo-fbd30b.svg" width="100%" height="100%">
     </div>
-    <div></div>
+    <div> <!-- 1fr --> </div>
+    <div>
+      <!-- aux nav button goes here -->
+    </div>
+    <div> <!-- 5% --> </div>
   </div>
 
 <!-- ***************************** nav overlay *************************** -->
@@ -221,12 +238,12 @@
         <img src="images/monomi.ai-filled-fbd30b.svg" height="39px">
       </div>
       <div style="text-align: right;">
-        <h6 style="color: #838383;">WIREFRAME BUILD VER. 2021.07.25</h6>
+        <h6 style="color: #838383;">WIREFRAME BUILD VER. 2021.07.28</h6>
       </div>
       <div></div>
     </div>
     
-    <ul id="hexGrid" style="margin-top: 189px;">
+    <ul id="hexGrid" style="margin-top: 219px;">
       <!-- start of hex and content -->
       <li class="hex"> <!-- blank out top row -->
         <div class="hexInt">
@@ -246,7 +263,7 @@
       <li class="hex">
         <div class="hexInt">
           <a class="hexLink" href="#">
-            <div class='img' style="background-color: #d3d3d3; background-image: url('images/navIconContacts-2f2b2f.svg');"></div>
+            <div class='img' style="background-image: url('images/navIconContacts-2f2b2f.svg');" onclick="location.href='contacts.html';"></div>
             <p id="hexLabel">CONTACTS</p>
           </a>
         </div>
@@ -255,7 +272,7 @@
       <li class="hex">
         <div class="hexInt">
           <a class="hexLink" href="#">
-            <div class='img' style="background-color: #d3d3d3; background-image: url('images/navIconMarket-2f2b2f.svg');"></div>
+            <div class='img' style="background-image: url('images/navIconMarket-2f2b2f.svg');" onclick="location.href='market.html';"></div>
             <p id="hexLabel">MARKET
               <span style="color:red; font-size: 2em; bottom:1%;">&#x2022;</span>
             </p>
@@ -266,7 +283,7 @@
       <li class="hex">
         <div class="hexInt">
           <a class="hexLink" href="#">
-            <div class='img' style="background-color: #d3d3d3; background-image: url('images/navIconMint-2f2b2f.svg');"></div>
+            <div class='img' style="background-image: url('images/navIconMint-2f2b2f.svg');" onclick="location.href='mint.html';"></div>
             <p id="hexLabel">MINT</p>
           </a>
         </div>
@@ -275,7 +292,7 @@
       <li class="hex">
         <div class="hexInt">
           <a class="hexLink" href="#">
-            <div class='img' style="background-color: #d3d3d3; background-image: url('images/navIconCollection-2f2b2f.svg');"></div>
+            <div class='img' style="background-image: url('images/navIconCollection-2f2b2f.svg');" onclick="location.href='collection.html';"></div>
             <p id="hexLabel">COLLECTION</p>
           </a>
         </div>
@@ -284,7 +301,7 @@
       <li class="hex">
         <div class="hexInt">
           <a class="hexLink" href="#">
-            <div class='img' style="background-color: #d3d3d3; background-image: url('images/navIconNews-2f2b2f.svg');"></div>
+            <div class='img' style="background-image: url('images/navIconNews-2f2b2f.svg');" onclick="location.href='news.html';"></div>
             <p id="hexLabel">NEWS
               <span style="color:red; font-size: 2em; bottom:1%;">&#x2022;</span>
             </p>
@@ -295,7 +312,7 @@
       <li class="hex">
         <div class="hexInt">
           <a class="hexLink" href="#">
-            <div class='img' style="background-color: #d3d3d3; background-image: url('images/navIconSettings-2f2b2f.svg');"></div>
+            <div class='img' style="background-image: url('images/navIconSettings-2f2b2f.svg');" onclick="location.href='settings.html';"></div>
             <p id="hexLabel">SETTINGS</p>
           </a>
         </div>
@@ -304,7 +321,7 @@
       <li class="hex">
         <div class="hexInt">
           <a class="hexLink" href="#">
-            <div class='img' style="background-color: #d3d3d3; background-image: url('images/navIconScan-2f2b2f.svg');"></div>
+            <div class='img' style="background-image: url('images/navIconScan-2f2b2f.svg');" onclick="location.href='scan.html';"></div>
             <p id="hexLabel">SCAN</p>
           </a>
         </div>
@@ -328,4 +345,5 @@
 </html>
 
 <!-- Scipts to load -->
+<script src="scripts/tabNav.js"></script>
 <script src="scripts/titleNav.js"></script>

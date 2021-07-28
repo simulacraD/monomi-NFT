@@ -73,11 +73,11 @@ select {
   position: fixed; /* Make it fixed but within the overlay */
   background-color: #f1f1f1;
   top: 0;
-  width: 100%; 
+  width: 100%;
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
   display: grid;
-  grid-template-rows: 75px 100px 105px; /* set out spacing */
-  grid-template-columns: 5% 1fr 1fr 5%;
+  grid-template-rows: 75px 75px 90px; /* set out spacing */
+  grid-template-columns: 5% 5fr 3fr 5%;
   z-index: 10;
 }
 
@@ -107,10 +107,10 @@ select {
 /* search bar style, part of tool nav above */
 .round {
   width: 100%;
-  font-size: 4.2rem;
+  font-size: 3.6rem;
   text-align: left;
   border-radius: 45px;
-  border: 2px #838383 solid;
+  border: 2px #2f2b2f solid;
   background-color: #f1f1f1;
   color: #838383;
   text-indent: 25px;
@@ -120,7 +120,7 @@ select {
 .search {
   position: relative;
   width: 100%;
-  height: 90px;
+  height: 95%;
   margin: 0 auto 0 auto;
 }
 
