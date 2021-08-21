@@ -4,9 +4,9 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("bottomNavGrid").style.bottom = "30px";
+    document.getElementById("bottomNavGrid").style.bottom = "60px";
   } else {
-    document.getElementById("bottomNavGrid").style.bottom = "-151px";
+    document.getElementById("bottomNavGrid").style.bottom = "-121px"; /* =-1(element height +1) */
   }
   prevScrollpos = currentScrollPos;
 }

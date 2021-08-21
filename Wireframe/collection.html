@@ -1,0 +1,420 @@
+<!--Wireframe for the monomi MVP with previews or placeholders for future features-->
+<!--Written by Dillon Lin [simulacraD]-->
+<!--WIREFRAME BUILD VER. 2021.08.21-->
+<!--Ref: 
+  https://codepen.io/adamriguez/pen/eRaXeq
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>monomi.ai Collection</title>
+
+    <!-- Reset browser default style before importing stylesheet and fonts -->
+    <link href="styles/reset.css" rel="stylesheet">
+
+    <!-- Link to stylesheet and fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="styles/styleMain.css" rel="stylesheet">
+    <link href="styles/styleTab.css" rel="stylesheet">
+    <link href="styles/styleNav.css" rel="stylesheet">
+    <link href="styles/styleHexGrid.css" rel="stylesheet">
+  </head>
+
+<body>
+  <main>
+    <div id="topTitleGrid">
+      <div class="span1-5"></div> <!-- blank for phone icons -->
+      <div></div> <!-- left margin -->
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Tab1')" id="defaultOpen">NFT Collection</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab2')">Sent NFTs</button>
+      </div>
+      <div></div> <!-- right margin -->
+      <div></div> <!-- left margin -->
+      <div style="padding-top: 2%;">
+        <form id="search-form">
+          <div class="search">
+            <input type="text" name="search" class="round" value="Search..."/>
+          </div>
+        </form>
+      </div>
+      <div style="padding-top: 2%; text-align:right;"><!--sort-->
+        <form action="#">
+          <h4>
+            <label for="#" style="font-size: 3rem;">Sort by:</label>
+            <select id="#" name="#" style="font-size:3rem; border-radius: 45px; padding: 0 15px 0 15px;">
+            <option value="#">
+              A-Z
+            </option>
+            <option value="#">
+              Z-A
+            </option>
+            <option value="#">
+              Newer
+            </option>
+            <option value="#" selected>
+              Older
+            </option>
+            <option value="#">
+              Received
+            </option>
+            <option value="#">
+              Sent
+            </option>
+          </select>
+        </h4>
+      </div><!--/.sort-->
+    </div>
+    
+    <!-- ***************************** Tab1 ***************************** -->
+    <div id="Tab1" class="tabContent">
+      <ul id="hexGrid">
+        
+        <!-- start of hex and content -->
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="NFT-Hello-World.html">
+              <div class='img' style="background-image: url('meta/NFT-Hello-World.svg'); background-color: #ff00f7;"></div>
+              <p id="hexLabel">Hello World!</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="NFT-Zipper.html">
+              <div class='img' style="background-image: url('meta/NFT-Zipper.jpg');"></div>
+              <p id="hexLabel">ジッパー</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="NFT-ZHA-sketch.html">
+              <div class='img' style="background-image: url('meta/NFT-ZHA-Sketch.jpg');"></div>
+              <p id="hexLabel">ZHA Sketch #2221</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="NFT-3D.html">
+              <div class='img' style="background-color: #000000; background-image: url('meta/NFT-3D-shape.png');"></div>
+              <p id="hexLabel">ZHA 3D Object #48</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="NFT-Yayoi.html">
+              <div class='img' style="background-image: url('meta/NFT-Yayoi-Kusama.jpg');"></div>
+              <p id="hexLabel">Tsumari in Bloom</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="NFT-Shoggy.html">
+              <div class='img' style="background-image: url('meta/NFT-Shoggy.jpg');"></div>
+              <p id="hexLabel">Shoggy</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="NFT-MF-0125.html">
+              <div class='img' style="background-image: url('meta/NFT-Marty-Friedman-tn.jpg');"></div>
+              <p id="hexLabel">M.Friedman #125</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="NFT-H-Murakami.html">
+              <div class='img' style="background-image: url('meta/NFT-Haruki-Murakami.jpg');"></div>
+              <p id="hexLabel">H.Murakami #90210</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="NFT-B612.html">
+              <div class='img' style="background-image: url('meta/NFT-B612.jpg');"></div>
+              <p id="hexLabel">Asteroid B612</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="NFT-irezumi.html">
+              <div class='img' style="background-image: url('meta/NFT-Osen.jpg');"></div>
+              <p id="hexLabel">Osen #65</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="NFT-katana.html">
+              <div class='img' style="background-image: url('meta/NFT-Naoshige-tn.jpg');"></div>
+              <p id="hexLabel">Yoshihara #45</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="NFT-Omamori.html">
+              <div class='img' style="background-image: url('meta/NFT-omamori.jpg');"></div>
+              <p id="hexLabel">学業守</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="NFT-donut.html">
+              <div class='img' style="background-image: url('meta/NFT-donut.jpg');"></div>
+              <p id="hexLabel">Donut #000309</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="NFT-Nogizaka.html">
+              <div class='img' style="background-image: url('meta/NFT-Nogizaka46-tn.jpg');"></div>
+              <p id="hexLabel">乃木坂46 #0917</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="NFT-Vans.html">
+              <div class='img' style="background-image: url('meta/NTF-Vans-tn.jpg');"></div>
+              <p id="hexLabel">Vans fbd30b-2f2b2f</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="NFT-BTS.html">
+              <div class='img' style="background-image: url('meta/NFT-BTS-tn.jpg');"></div>
+              <p id="hexLabel">BTS-FC #1367</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="NFT-Lego.html">
+              <div class='img' style="background-image: url('meta/NFT-Lego.jpg');"></div>
+              <p id="hexLabel">Lego Chungking Mansions</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="NFT-Urbana4.html">
+              <div class='img' style="background-image: url('meta/NFT-Urbana004.jpg');"></div>
+              <p id="hexLabel">Urbana #004</p>
+            </a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+    <!-- ***************************** Tab2 ***************************** -->
+    <div id="Tab2" class="tabContent">
+      <ul id="hexGrid">
+        
+        <!-- start of hex and content -->
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="NFT-Inari.html">
+              <div class='img' style="background-image: url('meta/NFT-Inari.png');"></div>
+              <p id="hexLabel">Iron Fire Inari</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="NFT-Urbana1.html">
+              <div class='img' style="background-image: url('meta/NFT-Urbana001.jpg');"></div>
+              <p id="hexLabel">Urbana #001</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="NFT-Urbana2.html">
+              <div class='img' style="background-image: url('meta/NFT-Urbana002.jpg');"></div>
+              <p id="hexLabel">Urbana #002</p>
+            </a>
+          </div>
+        </li>
+        
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="NFT-Urbana3.html">
+              <div class='img' style="background-image: url('meta/NFT-Urbana003.jpg');"></div>
+              <p id="hexLabel">Urbana #003</p>
+            </a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+  </main>
+
+<!-- ***************************** end of main ***************************** -->
+  <div id="bottomNavGrid">
+    <div> <!-- 5% --> </div>
+    <div>
+      <!-- aux nav button goes here -->
+    </div>
+    <div> <!-- 1fr --> </div>
+    <div id="openNavBtn" onclick="openNav()">
+      <img src="images/monomi-logo-2f2b2f.svg" width="100%" height="100%">
+    </div>
+    <div> <!-- 1fr --> </div>
+    <div style="margin: auto 0 auto 0; text-align: right;">
+      <i style="font-size: 6rem" class="fa">&#xf29c;</i>
+    </div>
+    <div> <!-- 5% --> </div>
+  </div>
+
+<!-- ***************************** nav overlay *************************** -->
+  <div id="navOverlay">
+
+    <div id="navMenu">
+      <ul id="hexGrid">
+        <!-- start of hex and content -->
+        <li class="hex"> <!-- blank out top row -->
+          <div class="hexInt">
+          </div>
+        </li>
+        
+        <li class="hex"> <!-- blank out top row -->
+          <div class="hexInt">
+          </div>
+        </li>
+
+        <li class="hex"> <!-- blank out top row -->
+          <div class="hexInt">
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="connections.html">
+              <div class='img' style="background-image: url('images/navIconContacts-2f2b2f.svg');" onclick="location.href='contacts.html';"></div>
+              <p id="hexLabel">CONNECTIONS</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/navIconMarket-2f2b2f.svg');" onclick="location.href='market.html';"></div>
+              <p id="hexLabel">MARKET
+                <span style="color:red; font-size: 2em; bottom:1%;">&#x2022;</span>
+              </p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/navIconMint-2f2b2f.svg');" onclick="location.href='mint.html';"></div>
+              <p id="hexLabel">MINT</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/navIconCollection-2f2b2f.svg');" onclick="location.href='collection.html';"></div>
+              <p id="hexLabel">COLLECTION</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/navIconNews-2f2b2f.svg');" onclick="location.href='news.html';"></div>
+              <p id="hexLabel">NEWS
+                <span style="color:red; font-size: 2em; bottom:1%;">&#x2022;</span>
+              </p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/navIconSettings-2f2b2f.svg');" onclick="location.href='settings.html';"></div>
+              <p id="hexLabel">SETTINGS</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/navIconScan-2f2b2f.svg');" onclick="location.href='scan.html';"></div>
+              <p id="hexLabel">SCAN</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex"> <!-- create space below -->
+          <div class="hexInt">
+          </div>
+        </li>
+      </ul>
+    </div> <!-- /.navMenu -->
+
+    <div id="overlayNavGrid">
+      <div></div>
+      <div></div>
+      <div id="closeNavBtn" onclick="closeNav()">
+        <img src="images/navIconCloseBtn-2f2b2f.svg" width="100%" height="100%">
+      </div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div><img src="images/monomi.ai-filled-fbd30b.svg" height="35px"></div>
+      <div></div>
+      <div style="text-align: right;">
+        <h6 style="color: #838383;">WIREFRAME BUILD VER. 2021.07.28</h6>
+      </div>
+      <div></div>
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- Scipts to load -->
+<script src="scripts/tabNav.js"></script>
+<script src="scripts/titleNav.js"></script>

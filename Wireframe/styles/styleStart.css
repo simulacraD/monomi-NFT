@@ -1,0 +1,63 @@
+/* Flexible General */
+html body {
+   background-color: #2f2b2f;
+   color: #f1f1f1;
+}
+
+ /* fonts */
+body,
+input,
+textarea,
+h1 h2 h3 h4 h5 h6,
+.page-title span,
+a.url {
+font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+text-decoration: none;
+}   
+
+/* font size heirarchy */
+h1 {font-size: 81px;}
+h2 {font-size: 72px;}
+h3 {font-size: 60px;}
+h4 {font-size: 48px;}
+h5 {font-size: 36px;}
+h6 {font-size: 27px;}
+
+a {
+   white-space: nowrap;
+   text-decoration: none;
+}
+ 
+/* form styling */
+input {
+   margin: 0 auto 0 auto;
+   width: 480px;
+   height: 72px;
+   font-size: 48px;
+   border-color: #111111;
+   border-style: solid;
+   border-radius: 10px;
+}   
+
+/* div */ 
+#main { 
+   margin: 300px auto auto auto;
+   width: 495px;
+   height: auto;
+   display: grid; /* make the content stay in place */
+   text-align: center;
+   text-decoration: none;
+   z-index: 0;
+}
+
+/* Navigation menu button */
+.navBtn {
+   margin: 0 auto 0 auto;
+   border: none;
+   cursor: pointer;
+}
+
+ /* Navigation menu button on hover & focus */
+.navBtn:hover, .navBtn:focus {
+   transform: scale(1.01); 
+}

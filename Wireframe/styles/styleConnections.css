@@ -1,0 +1,29 @@
+.cardFriend {
+    display: grid; /* make the content stay in place */
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: auto;
+    margin: 5% 0 5% 0;
+}
+
+.cardIcon {
+    padding: 0 30px 0 0;
+}
+
+.cardIcon img {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+}
+
+.cardTextContainer {
+    height: 210px;
+    position: relative;
+}
+
+.cardText {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}

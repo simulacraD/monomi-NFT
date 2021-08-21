@@ -1,7 +1,7 @@
 /*General top level*/    
 html body {
-  background-color: #f1f1f1;
-  color: #2f2b2f;
+  background-color: #2f2b2f;
+  color: #f1f1f1;
 }
 
 /* fonts */
@@ -24,10 +24,10 @@ h2 {font-size: 4.2rem;}
 h3 {font-size: 3.6rem;}
 h4 {font-size: 3.0rem;}
 h5 {font-size: 2.4rem;}
-h6 {font-size: 1.8rem;}
+h6 {font-size: 1.5rem;}
 
 /* set out link style, no break, no hyperlink appearance */
-a {
+a, a:link, a:visited, a:focus, a:hover, a:active {
   white-space: nowrap;
   text-decoration: none;
   font-size: inherit;
@@ -61,23 +61,32 @@ select {
   opacity: 1;
 }
 
-/* set out the main content window */
-#main { 
-  background-color: #f1f1f1;
-  height: auto;
-  text-decoration: none;
-  z-index: -1;
+/*
+ul {
+  list-style-position: inside;
 }
+*/
 
 #topTitleGrid {
-  position: fixed; /* Make it fixed but within the overlay */
-  background-color: #f1f1f1;
+  position: fixed;
   top: 0;
   width: 100%;
-  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  transition: top 0.3s;
   display: grid;
-  grid-template-rows: 75px 75px 90px; /* set out spacing */
-  grid-template-columns: 5% 5fr 3fr 5%;
+  background-color: rgba(47, 43, 47, 1);
+  grid-template-rows: 75px 75px 90px;
+  grid-template-columns: 5% 5fr 4fr 5%;
+  z-index: 10;
+}
+
+#topTitleGrid-NFT {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
+  display: grid;
+  grid-template-rows: 60px 106px 90px;
+  grid-template-columns: 5% 5fr 4fr 5%;
   z-index: 10;
 }
 
@@ -111,7 +120,7 @@ select {
   text-align: left;
   border-radius: 45px;
   border: 2px #2f2b2f solid;
-  background-color: #f1f1f1;
+  background-color: #d3d3d3;
   color: #838383;
   text-indent: 25px;
   z-index: 5;

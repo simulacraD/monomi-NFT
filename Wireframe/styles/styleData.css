@@ -1,0 +1,143 @@
+/* NFT image */
+#nftMeta {
+    width: 100%;
+    background-color: #2f2b2f;
+  }
+
+#nftMeta img {
+    width: 100%;
+}
+
+#iconMenu {
+    display: grid;
+    margin: 2% 0 2% 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.icon {
+    margin: auto;
+}
+
+.viewer3D {
+    display: block;
+}
+
+model-viewer {
+    width: 880px; 
+    height: 1200px;
+    margin: auto;
+}
+
+/* data visualisation collapsible data bar */
+.dataCollapsible {
+    background-color: #d3d3d3;
+    color: #2f2b2f;
+    padding: 2%;
+    width: 100%;
+    display:block;
+    border: none;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    outline: none;
+    margin-top: 5%;
+}
+
+/* data content, sets default to zero */
+.dataContent {
+    max-height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.1s ease-out;
+}
+/* end of collapsible */
+
+.dataTitleBox {
+    background-color: #d3d3d3;
+    color: #2f2b2f;
+    border: none;
+    padding: 0 2% 0 2%;
+}
+
+/* data visualisation events list class*/
+.dataBox {
+    border: #d3d3d3;
+    border-style: solid;
+    padding: 0 2% 0 2%;
+}
+
+/* data visualisation narrow left, large right */
+.dataList1-2 {
+    border: #d3d3d3; 
+    border-style: solid;
+    display: grid; /* make the content stay in place */
+    grid-template-columns: 1fr 5% 2fr;
+    grid-template-rows: auto;
+    padding: 0 2% 0 2%;
+}
+
+.dataList1-1 {
+    border: #d3d3d3;  
+    border-style: solid;
+    display: grid; /* make the content stay in place */
+    grid-template-columns: 1fr 5% 1fr;
+    grid-template-rows: auto;
+    padding: 0 2% 0 2%;
+}
+
+.dataList2-1 {
+    border: #d3d3d3; 
+    border-style: solid;
+    display: grid; /* make the content stay in place */
+    grid-template-columns: 2fr 5% 1fr;
+    grid-template-rows: auto;
+    padding: 0 2% 0 2%;
+}
+
+.dataList5-1 {
+    border: #d3d3d3; 
+    border-style: solid;
+    display: grid; /* make the content stay in place */
+    grid-template-columns: 5fr 1% 1fr;
+    grid-template-rows: auto;
+    padding: 0 2% 0 2%;
+}
+
+.dataList1ul {
+    border: #d3d3d3; 
+    border-style: solid;
+    display: grid; /* make the content stay in place */
+    grid-template-columns: 7% 1fr;
+    grid-template-rows: auto;
+    padding: 0 2% 0 2%;
+}
+
+.dataListHistory {
+    margin-top: 5%;
+    display: grid; /* make the content stay in place */
+    grid-template-columns: 90px 41px 8px 41px 120px 1fr;
+    grid-template-rows: 90px 270px 90px 270px 90px 270px 90px 270px 90px;
+}
+
+.dataHDot {
+    grid-column: 2 / 5;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+}
+
+.dataHLine {
+    grid-column: 3 / 4;
+    background-color: #d3d3d3;
+}
+
+.dataHTSummary {
+    grid-column: 6 / 7;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.dataHTDetail {
+    grid-column: 6 / 7;
+}

@@ -1,0 +1,353 @@
+<!--Wireframe for the monomi MVP with previews or placeholders for future features-->
+<!--Written by Dillon Lin [simulacraD]-->
+<!--WIREFRAME BUILD VER. 2021.08.21-->
+<!--Ref: 
+  https://codepen.io/adamriguez/pen/eRaXeq
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>monomi.ai NFT Urbana #001</title>
+
+    <!-- Reset browser default style before importing stylesheet and fonts -->
+    <link href="styles/reset.css" rel="stylesheet">
+
+    <!-- Link to stylesheet and fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="styles/styleData.css" rel="stylesheet">
+    <link href="styles/styleHexGrid.css" rel="stylesheet">
+    <link href="styles/styleMain.css" rel="stylesheet">
+    <link href="styles/styleNav.css" rel="stylesheet">
+    <link href="styles/styleTab.css" rel="stylesheet">
+    <link href="styles/styleSlider.css" rel="stylesheet">
+  </head>
+
+<body>
+  <main>
+    <div id="topTitleGrid-NFT">
+      <div class="span1-5"></div> <!-- blank for phone icons -->
+      <div class="span2-4">
+        <h2>Urbana #001</h2>
+      </div>
+      <div class="span2-4">
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Tab1')" id="defaultOpen">Meta</button>
+            <button class="tablinks" onclick="openTab(event, 'Tab2')">Details</button>
+            <button class="tablinks" onclick="openTab(event, 'Tab3')">History</button>
+            <button class="tablinks" onclick="openTab(event, 'Tab4')">Settings</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ***************************** Tab1 ***************************** -->
+    <div id="Tab1" class="tabContent">
+      <div id="nftMeta">
+        <img src="meta/NFT-Urbana001.jpg">
+      </div>
+
+      <div id="iconMenu">
+        <div class="icon"><i style="font-size: 7.2rem;" class="fa">&#xf08a;</i></div> <!-- fav -->
+        <div class="icon"><i style="font-size: 7.2rem; transform: rotate(90deg);" class="fa">&#xf08b;</i></div> <!-- download -->
+        <div class="icon"><i style="font-size: 7.2rem;" class="fa">&#xf1e0;</i></div> <!-- share -->
+        <div class="icon"><i style="font-size: 7.2rem; color:#838383;" class="fa">&#xf1d9;</i></div> <!-- send -->
+      </div>
+
+      <!--collapsible 1-->
+      <button class="dataCollapsible">
+        <h2>QR Code</h2>
+      </button>
+
+      <div class="dataContent">
+        <img src="images/QR-Code.webp" style="width: 100%; background-color: #ffffff;">
+      </div>
+      <!--/.collapsible 1-->
+    </div><!--/.Tab1-->
+
+    <!-- ***************************** Tab2 ***************************** -->
+    <div id="Tab2" class="tabContent">
+      <!--collapsible 1-->
+      <button class="dataCollapsible">
+        <h2>NFT Issuance Summary</h2>
+      </button>
+
+      <div class="dataContent">
+        <div class="dataList1-2">
+          <div style="text-align: right;"><h3>Artefact</h3></div>
+          <div></div>
+          <div><h3>Image file</h3></div>
+
+          <div style="text-align: right;"><h3>Location</h3></div>
+          <div></div>
+          <div><h3>www.monomi.ai/nft /urbana001.jpg</h3></div>
+
+          <div style="text-align: right;"><h3>Minted on</h3></div>
+          <div></div>
+          <div><h3>13 JUL '21 10:10:30 UTC</h3></div>
+
+          <div style="text-align: right;"><h3>Issuer</h3></div>
+          <div></div>
+          <div><h3>Dillon Lin (verified)</h3></div>
+
+          <div style="text-align: right;"><h3>Issuer's Public Key</h3></div>
+          <div></div>
+          <div><h3>e3f46a5a0a63d8a2f3fcd cdf75fb9887a2ec33b5</h3></div>
+        </div><!--/.dataList1-2-->
+      </div><!--/.dataContent-->
+      <!--/.collapsible 1-->
+
+      <!--collapsible 2-->
+      <button class="dataCollapsible">
+        <h2>Ownership Details</h2>
+      </button>
+
+      <div class="dataContent">
+        <div class="dataList1-2">
+          <div style="text-align: right;"><h3>Received</h3></div>
+          <div></div>
+          <div><h3>13 JUL '21 10:10:30 UTC</h3></div>
+
+          <div style="text-align: right;"><h3>Sender</h3></div>
+          <div></div>
+          <div><h3>N/A</h3></div>
+
+          <div style="text-align: right;"><h3>Sender's Public Key</h3></div>
+          <div></div>
+          <div><h3>e3f46a5a0a63d8a2f3fc dcdf75fb9887a2ec33b5</h3></div>
+
+          <div style="text-align: right;"><h3>Price</h3></div>
+          <div></div>
+          <div><h3>N/A</h3></div>
+        </div><!--/.dataList2-1-->
+      </div><!--/.dataContent-->
+      <!--/.collapsible 2-->
+
+      <!--collapsible 3-->
+      <button class="dataCollapsible">
+        <h2>Entitlements</h2>
+      </button>
+
+      <div class="dataContent">
+        <div class="dataList1ul">
+          <div></div>
+          <div>
+            <h3><ul>
+              <li>Ownership of the work</li>
+              <li>Special Offers (with this app)</li>
+              <li>NFT resale (less 5% author royalty & 2.5% Tx fee) </li>
+            </ul></h3>
+          </div>
+        </div><!--/.dataList1ul-->
+      </div><!--/.dataContent-->
+      <!--/.collapsible 3-->
+    </div><!--/.Tab2-->
+
+    <!-- ***************************** Tab3 ***************************** -->
+    <div id="Tab3" class="tabContent">
+        <div class="dataListHistory">
+          <div class="dataHDot"></div>
+            <div class="dataHTSummary"><h2>Minted by</h2></div>
+          <div class="dataHLine"></div>
+            <div class="dataHTDetail">
+              <h5>e3f46a5a0a63d8a2f3fc dcdf75fb9887a2ec33b5</h5>
+              <h5>13 JUL '21 10:10:30 UTC</h5>
+            </div>
+          
+          <div class="dataHDot"></div>
+            <div class="dataHTSummary"><h2>Transferred to</h2></div>
+            <div class="dataHTDetail">
+              <h5>c307b632ca379cb7df9c f79d98584204568f2197</h5>
+              <h5>13 JUL '21 14:50:30 UTC</h5>
+            </div>
+  
+        </div>
+      </div><!--/.Tab3-->
+
+    <!-- ***************************** Tab4 ***************************** -->
+    <div id="Tab4" class="tabContent">
+      <div class="dataTitleBox">
+        <h2>NFT Settings</h2>
+      </div>
+
+      <div class="dataList5-1">
+        <div><h2>Public Visibility*</h2></div>
+        <div></div>
+        <div style="text-align: right;">
+          <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+          </label>
+        </div>
+
+        <div><h2>Friends Visibility*</h2></div>
+        <div></div>
+        <div style="text-align: right;">
+          <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+          </label>
+        </div>
+
+        <div><h2>Not Safe For Work (NSFW)</h2></div>
+        <div></div>
+        <div style="text-align: right;">
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+
+        <div><h2>Transferrable</h2></div>
+        <div></div>
+        <div style="text-align: right;">
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+
+      <h5><i>*Note: The visibility settings only affect visibility on this platform and related apps. 
+        It is still possible to see ownership of NFTs on the public blockchain in the form of public keys.
+        For more information click on the <i style="font-size: 3.6rem" class="fa">&#xf29c;</i> button at the bottom right corner of this screen.
+      </i></h5>
+    </div><!--/.Tab4-->
+
+  </main>
+
+<!-- ***************************** end of main ***************************** -->
+  <div id="bottomNavGrid">
+    <div> <!-- 5% --> </div>
+    <div class="navBtnL" onclick="location.href='collection.html'">
+        <i style="font-size: 6rem" class="fa">&#xf053;</i>
+    </div>
+    <div> <!-- 1fr --> </div>
+    <div id="openNavBtn" onclick="openNav()">
+      <img src="images/monomi-logo-2f2b2f.svg" width="100%" height="100%">
+    </div>
+    <div> <!-- 1fr --> </div>
+    <div class="navBtnR">
+      <i style="font-size: 6rem" class="fa">&#xf29c;</i>
+    </div>
+    <div> <!-- 5% --> </div>
+  </div>
+
+<!-- ***************************** nav overlay *************************** -->
+  <div id="navOverlay">
+
+    <div id="navMenu">
+      <ul id="hexGrid">
+        <!-- start of hex and content -->
+        <li class="hex"> <!-- blank out top row -->
+          <div class="hexInt">
+          </div>
+        </li>
+        
+        <li class="hex"> <!-- blank out top row -->
+          <div class="hexInt">
+          </div>
+        </li>
+
+        <li class="hex"> <!-- blank out top row -->
+          <div class="hexInt">
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/navIconContacts-2f2b2f.svg');" onclick="location.href='contacts.html';"></div>
+              <p id="hexLabel">CONNECTIONS</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/navIconMarket-2f2b2f.svg');" onclick="location.href='market.html';"></div>
+              <p id="hexLabel">MARKET
+                <span style="color:red; font-size: 2em; bottom:1%;">&#x2022;</span>
+              </p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/navIconMint-2f2b2f.svg');" onclick="location.href='mint.html';"></div>
+              <p id="hexLabel">MINT</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/navIconCollection-2f2b2f.svg');" onclick="location.href='collection.html';"></div>
+              <p id="hexLabel">COLLECTION</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/navIconNews-2f2b2f.svg');" onclick="location.href='news.html';"></div>
+              <p id="hexLabel">NEWS
+                <span style="color:red; font-size: 2em; bottom:1%;">&#x2022;</span>
+              </p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/navIconSettings-2f2b2f.svg');" onclick="location.href='settings.html';"></div>
+              <p id="hexLabel">SETTINGS</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex">
+          <div class="hexInt">
+            <a class="hexLink" href="#">
+              <div class='img' style="background-image: url('images/navIconScan-2f2b2f.svg');" onclick="location.href='scan.html';"></div>
+              <p id="hexLabel">SCAN</p>
+            </a>
+          </div>
+        </li>
+
+        <li class="hex"> <!-- create space below -->
+          <div class="hexInt">
+          </div>
+        </li>
+      </ul>
+    </div> <!-- /.navMenu -->
+
+    <div id="overlayNavGrid">
+      <div></div>
+      <div></div>
+      <div id="closeNavBtn" onclick="closeNav()">
+        <img src="images/navIconCloseBtn-2f2b2f.svg" width="100%" height="100%">
+      </div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div><img src="images/monomi.ai-filled-fbd30b.svg" height="35px"></div>
+      <div></div>
+      <div style="text-align: right;">
+        <h6 style="color: #838383;">WIREFRAME BUILD VER. 2021.07.28</h6>
+      </div>
+      <div></div>
+    </div>
+  </div>
+</body>
+</html>
+
+<!-- Scipts to load -->
+<script src="scripts/dataCollapsible.js"></script>
+<script src="scripts/tabNav.js"></script>
+<script src="scripts/titleNav.js"></script>
